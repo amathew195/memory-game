@@ -1,0 +1,155 @@
+h1 {
+  text-align: center;
+  font-family: 'Fredoka One', cursive;
+  color: black;
+  font-size: 64px;
+  padding-top: 2%;
+}
+
+body {
+  height: 100vh;
+  background-color: #d6eadf;
+  display: flex;
+  flex-direction: column;
+}
+
+#game {
+  width: 700px;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  margin: auto;
+  perspective: 1000px;
+}
+
+.memoryCard {
+  width: calc(20% - 10px);
+  height: calc(40% - 5px);
+  position: relative;
+  margin: 5px;
+  transform-style: preserve-3d;
+  transition: all 0.8s ease;
+  border-radius: 10%;
+  border: black solid 1px;
+}
+
+.backFace {
+  position: absolute;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.frontFace {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10%;
+  transform: rotateY(180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.flipCard {
+  transform: rotateY(180deg);
+}
+
+.container {
+  /* position: absolute; */
+  width: 640px;
+}
+
+.charlieRice .frontFace img,
+.charlieGroomer .frontFace img,
+.charlieStanding .frontFace img {
+  height: 90%;
+}
+
+.backFace img {
+  width: 55%;
+  height: auto;
+}
+
+.charlieRice .frontFace {
+  background-color: #eac4d5;
+}
+
+.charlieGroomer .frontFace {
+  background-color: #809bce;
+}
+
+.charlieStanding .frontFace {
+  background-color: #95b8d1;
+}
+
+.charliePosed .frontFace {
+  background-color: #b8e0d2;
+}
+
+.charlieFace .frontFace {
+  background-color: #f4d8cd;
+}
+
+#buttonContainer {
+  margin-top: 4%;
+  display: flex;
+  justify-content: center;
+  /* border: solid 1px black; */
+}
+
+#startButton,
+#resetButton {
+  margin: 10px;
+  font-size: 1em;
+  padding: 1em 2em;
+  border: 2px solid black;
+  color: white;
+  font-weight: 700;
+}
+
+#startButton {
+  background-color: #ff4d6d;
+}
+
+#startButton:hover {
+  background-color: #f96e88;
+  border: 2px solid white;
+  box-shadow: 0 0.5em 0.5em -0.4em white;
+}
+
+#startButton:active {
+  transform: translateY(4px);
+}
+
+#resetButton {
+  background-color: #51b4f5;
+}
+
+#resetButton:hover {
+  background-color: #94cef6;
+  border: 2px solid white;
+  box-shadow: 0 0.5em 0.5em -0.4em white;
+}
+
+#resetButton:active {
+  transform: translateY(4px);
+}
+
+#tryTracker {
+  margin-top: 10px;
+  font-family: 'Fredoka One', cursive;
+  display: flex;
+  justify-content: center;
+  font-size: 28px;
+}

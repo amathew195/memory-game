@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Memory Game</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="memory-game.css" />
+</head>
+
+<body>
+
+  <h1>Memory Game</h1>
+  <section id="buttonContainer">
+    <button id="startButton">Start Game</button>
+    <button id="resetButton">Reset Game</button>
+  </section>
+  <section id="tryTracker">
+    Total Tries: &nbsp;<span id="tries">0</span>
+  </section>
+  <div id="game">
+    <div class="memoryCard charliePosed">
+      <div class="frontFace"><img src="images/Charlie - Posed.png" alt=""></div>
+      <div class="backFace"><img src="images/question-mark.png" alt=""></div>
+    </div>
+    <div class="memoryCard charliePosed">
+      <div class="frontFace"><img src="images/Charlie - Posed.png" alt=""></div>
+      <div class="backFace"><img src="images/question-mark.png" alt=""></div>
+    </div>
+    <div class="memoryCard charlieGroomer">
+      <div class="frontFace"><img src="images/Charlie - Groomer.png" alt=""></div>
+      <div class="backFace"><img src="images/question-mark.png" alt=""></div>
+    </div>
+    <div class="memoryCard charlieGroomer">
+      <div class="frontFace"><img src="images/Charlie - Groomer.png" alt=""></div>
+      <div class="backFace"><img src="images/question-mark.png" alt=""></div>
+    </div>
+    <div class="memoryCard charlieStanding">
+      <div class="frontFace"><img src="images/Charlie - standing.png" alt=""></div>
+      <div class="backFace"><img src="images/question-mark.png" alt=""></div>
+    </div>
+    <div class="memoryCard charlieStanding">
+      <div class="frontFace"><img src="images/Charlie - standing.png" alt=""></div>
+      <div class="backFace"><img src="images/question-mark.png" alt=""></div>
+    </div>
+    <div class="memoryCard charlieRice">
+      <div class="frontFace"><img src="images/Charlie - Rice.png" alt=""></div>
+      <div class="backFace"><img src="images/question-mark.png" alt=""></div>
+    </div>
+    <div class="memoryCard charlieRice">
+      <div class="frontFace"><img src="images/Charlie - Rice.png" alt=""></div>
+      <div class="backFace"><img src="images/question-mark.png" alt=""></div>
+    </div>
+    <div class="memoryCard charlieFace">
+      <div class="frontFace"><img src="images/Charlie - Face.png" alt=""></div>
+      <div class="backFace"><img src="images/question-mark.png" alt=""></div>
+    </div>
+    <div class="memoryCard charlieFace">
+      <div class="frontFace"><img src="images/Charlie - Face.png" alt=""></div>
+      <div class="backFace"><img src="images/question-mark.png" alt=""></div>
+    </div>
+
+  </div>
+
+  <script src=" memory-game.js"></script>
+
+</body>
+
+</html>
